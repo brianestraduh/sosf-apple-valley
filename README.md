@@ -2,6 +2,8 @@
 
 Professional website for **Submissions of Success Foundation (SOSF)** - a non-profit organization empowering at-risk youth through combat sports and mentorship.
 
+🌐 **Live Site**: [https://brianestraduh.github.io/sosf-apple-valley/](https://brianestraduh.github.io/sosf-apple-valley/)
+
 ## 🚀 Tech Stack
 
 - **Framework**: React 19 + TypeScript
