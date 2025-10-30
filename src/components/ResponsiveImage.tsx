@@ -1,0 +1,17 @@
+interface ResponsiveImageProps {
+  src: string
+  alt: string
+  className?: string
+}
+
+export function ResponsiveImage({ src, alt, className }: ResponsiveImageProps) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className || 'w-full h-auto rounded-2xl'}
+      loading="lazy"
+    />
+  )
+}
+

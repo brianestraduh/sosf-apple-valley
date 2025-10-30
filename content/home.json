@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "title": "Empowering Youth Through Combat Sports",
+    "subtitle": "Providing access, mentorship, and opportunity to at-risk youth.",
+    "ctaLabel": "Learn More",
+    "ctaHref": "#/about",
+    "imageSrc": "/images/hero.jpg",
+    "imageAlt": "Youth boxing training with coach"
+  },
+  "sections": [
+    {
+      "title": "Our Mission",
+      "body": "SOSF connects kids with local gyms and mentors to build confidence, discipline, and purpose through combat sports.",
+      "imageSrc": "/images/ProgramsAndInitiatives.jpeg"
+    },
+    {
+      "title": "Get Involved",
+      "body": "Join as a volunteer, mentor, or sponsor gym.",
+      "imageSrc": "/images/getInvolved.jpeg"
+    },
+    {
+      "title": "Donate",
+      "body": "Your contributions go directly to training scholarships and mentorship programs.",
+      "imageSrc": "/images/callToAction.jpeg"
+    }
+  ],
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Youth Served"
+    },
+    {
+      "value": "50+",
+      "label": "Partner Gyms"
+    },
+    {
+      "value": "100+",
+      "label": "Mentors"
+    },
+    {
+      "value": "85%",
+      "label": "Success Rate"
+    }
+  ]
+}
+

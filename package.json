@@ -1,0 +1,31 @@
+{
+  "name": "sosf-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^3.1.1",
+    "@mdx-js/rollup": "^3.1.1",
+    "@tailwindcss/postcss": "^4.1.16",
+    "@types/node": "^24.9.2",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.16",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

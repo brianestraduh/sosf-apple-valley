@@ -1,0 +1,23 @@
+{
+  "orgName": "Submissions of Success Foundation",
+  "shortName": "SOSF",
+  "tagline": "Answer the Call — A coach in every kid's corner.",
+  "contact": {
+    "email": "info@sosf.org",
+    "phone": "(555) 555-5555",
+    "address": "Victorville, CA"
+  },
+  "nav": [
+    { "label": "About", "href": "/about" },
+    { "label": "Programs", "href": "/programs" },
+    { "label": "How It Works", "href": "/how-it-works" },
+    { "label": "Get Involved", "href": "/volunteers" },
+    { "label": "Donate", "href": "/donate" }
+  ],
+  "social": {
+    "instagram": "https://instagram.com/sosf",
+    "facebook": "https://facebook.com/sosf",
+    "twitter": "https://x.com/sosf"
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "partners": [
+    {
+      "name": "Victor Valley Boxing",
+      "location": "Victorville, CA",
+      "type": "Boxing"
+    },
+    {
+      "name": "High Desert MMA",
+      "location": "Hesperia, CA",
+      "type": "Mixed Martial Arts"
+    },
+    {
+      "name": "Champions Wrestling Club",
+      "location": "Apple Valley, CA",
+      "type": "Wrestling"
+    },
+    {
+      "name": "Desert Warriors BJJ",
+      "location": "Victorville, CA",
+      "type": "Brazilian Jiu-Jitsu"
+    }
+  ]
+}
+
