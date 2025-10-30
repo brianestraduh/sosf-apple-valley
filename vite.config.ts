@@ -7,7 +7,7 @@ export default defineConfig({
     { enforce: 'pre', ...mdx() },
     react()
   ],
-  base: './', // Use relative paths for GitHub Pages
+  base: '/sosf-apple-valley/', // GitHub Pages subdirectory path
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
