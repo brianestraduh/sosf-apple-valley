@@ -8,7 +8,7 @@ export function Footer() {
           {/* Organization Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/images/logo.jpg" alt={siteData.shortName} className="h-10 w-10 rounded-full" />
+              <img src={`${import.meta.env.BASE_URL}images/logo.jpg`} alt={siteData.shortName} className="h-10 w-10 rounded-full" />
               <span className="font-display text-xl text-brand-sand">{siteData.shortName}</span>
             </div>
             <p className="text-sm text-brand-ink/70 mb-4">{siteData.tagline}</p>

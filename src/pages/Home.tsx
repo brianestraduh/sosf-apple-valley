@@ -53,7 +53,7 @@ export function Home() {
                 </div>
                 <div>
                   <img
-                    src={section.imageSrc}
+                    src={`${import.meta.env.BASE_URL}${section.imageSrc.replace(/^\//, '')}`}
                     alt={section.title}
                     className="rounded-2xl w-full h-auto shadow-2xl"
                   />
@@ -63,7 +63,7 @@ export function Home() {
               <>
                 <div className="order-2 md:order-1">
                   <img
-                    src={section.imageSrc}
+                    src={`${import.meta.env.BASE_URL}${section.imageSrc.replace(/^\//, '')}`}
                     alt={section.title}
                     className="rounded-2xl w-full h-auto shadow-2xl"
                   />

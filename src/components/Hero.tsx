@@ -27,7 +27,7 @@ export function Hero({
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 overflow-hidden">
             <img
-              src={imageSrc}
+              src={`${import.meta.env.BASE_URL}${imageSrc.replace(/^\//, '')}`}
               alt={imageAlt || ''}
               className="w-full h-full object-contain object-center opacity-20"
               style={{ 

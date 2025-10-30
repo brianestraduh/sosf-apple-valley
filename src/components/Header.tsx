@@ -11,7 +11,7 @@ export function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <a href="#/" className="flex items-center gap-2">
-            <img src="/images/logo.jpg" alt={siteData.shortName} className="h-10 w-10 rounded-full" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.jpg`} alt={siteData.shortName} className="h-10 w-10 rounded-full" />
             <div className="flex flex-col">
               <span className="font-display text-lg text-brand-sand leading-none">{siteData.shortName}</span>
               <span className="text-xs text-brand-ink/60 leading-none mt-0.5 hidden sm:block">

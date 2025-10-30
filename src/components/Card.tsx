@@ -14,7 +14,7 @@ export function Card({ title, children, imageSrc, imageAlt, className }: CardPro
     <div className={clsx('card', className)}>
       {imageSrc && (
         <img
-          src={imageSrc}
+          src={`${import.meta.env.BASE_URL}${imageSrc.replace(/^\//, '')}`}
           alt={imageAlt || title || ''}
           className="w-full h-48 object-cover rounded-xl mb-4"
         />

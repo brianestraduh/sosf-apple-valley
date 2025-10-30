@@ -7,7 +7,7 @@ interface ResponsiveImageProps {
 export function ResponsiveImage({ src, alt, className }: ResponsiveImageProps) {
   return (
     <img
-      src={src}
+      src={`${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`}
       alt={alt}
       className={className || 'w-full h-auto rounded-2xl'}
       loading="lazy"
