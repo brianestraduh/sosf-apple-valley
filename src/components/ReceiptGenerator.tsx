@@ -121,23 +121,16 @@ export function ReceiptGenerator() {
   }
 
   return (
-    <div className="bg-white border-2 border-brand-sand rounded-2xl p-8 my-8 shadow-lg">
-      <div className="text-center mb-6">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-red/10 rounded-full mb-4">
-          <svg className="w-8 h-8 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
-        </div>
-        <h2 className="h3 mb-3">Generate IRS-Compliant Receipt</h2>
-        <p className="text-neutral-600 max-w-xl mx-auto">
-          Need an official receipt for tax purposes? Enter your donation details below to generate 
-          an IRS-compliant donation acknowledgment letter.
-        </p>
-      </div>
+    <div className="bg-brand-sand/10 rounded-2xl p-8 my-8">
+      <h2 className="h3 mb-4">Generate IRS-Compliant Receipt</h2>
+      <p className="text-neutral-700 mb-6">
+        Need an official receipt for tax purposes? Enter your donation details below to generate 
+        an IRS-compliant donation acknowledgment letter.
+      </p>
       
-      <div className="space-y-5 max-w-lg mx-auto">
+      <div className="space-y-4">
         <div>
-          <label className="block text-sm font-bold text-neutral-700 mb-2" htmlFor="donorName">
+          <label className="block text-sm font-semibold mb-2" htmlFor="donorName">
             Donor Name <span className="text-brand-red">*</span>
           </label>
           <input
@@ -146,33 +139,30 @@ export function ReceiptGenerator() {
             value={donorName}
             onChange={(e) => setDonorName(e.target.value)}
             placeholder="John Doe"
-            className="w-full px-4 py-3 border-2 border-neutral-200 rounded-lg focus:outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all"
+            className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red"
             required
           />
         </div>
         
         <div>
-          <label className="block text-sm font-bold text-neutral-700 mb-2" htmlFor="amount">
+          <label className="block text-sm font-semibold mb-2" htmlFor="amount">
             Donation Amount <span className="text-brand-red">*</span>
           </label>
-          <div className="relative">
-            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-500 font-semibold">$</span>
-            <input
-              id="amount"
-              type="number"
-              step="0.01"
-              min="0"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-              placeholder="100.00"
-              className="w-full pl-8 pr-4 py-3 border-2 border-neutral-200 rounded-lg focus:outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all"
-              required
-            />
-          </div>
+          <input
+            id="amount"
+            type="number"
+            step="0.01"
+            min="0"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            placeholder="100.00"
+            className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red"
+            required
+          />
         </div>
         
         <div>
-          <label className="block text-sm font-bold text-neutral-700 mb-2" htmlFor="donationDate">
+          <label className="block text-sm font-semibold mb-2" htmlFor="donationDate">
             Donation Date <span className="text-brand-red">*</span>
           </label>
           <input
@@ -180,14 +170,14 @@ export function ReceiptGenerator() {
             type="date"
             value={donationDate}
             onChange={(e) => setDonationDate(e.target.value)}
-            className="w-full px-4 py-3 border-2 border-neutral-200 rounded-lg focus:outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all"
+            className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red"
             required
           />
         </div>
         
         <div>
-          <label className="block text-sm font-bold text-neutral-700 mb-2" htmlFor="email">
-            Email <span className="text-neutral-400 font-normal">(Optional)</span>
+          <label className="block text-sm font-semibold mb-2" htmlFor="email">
+            Email (Optional)
           </label>
           <input
             id="email"
@@ -195,14 +185,14 @@ export function ReceiptGenerator() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="john@example.com"
-            className="w-full px-4 py-3 border-2 border-neutral-200 rounded-lg focus:outline-none focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 transition-all"
+            className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red"
           />
         </div>
         
         <button
           onClick={generateReceipt}
           disabled={isGenerating}
-          className="w-full bg-brand-red text-white font-bold py-4 px-6 rounded-lg hover:bg-brand-red/90 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:hover:shadow-none flex items-center justify-center gap-2"
+          className="w-full bg-brand-red text-white font-bold text-lg py-4 px-6 rounded-lg hover:bg-brand-red/90 hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {isGenerating ? (
             <>
@@ -215,14 +205,14 @@ export function ReceiptGenerator() {
           ) : (
             <>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
               Download Official Receipt (PDF)
             </>
           )}
         </button>
         
-        <p className="text-sm text-center text-neutral-500 italic pt-2">
+        <p className="text-sm text-neutral-600 italic">
           * Required fields. Please ensure all information is accurate as it will appear on your official tax receipt.
         </p>
       </div>
