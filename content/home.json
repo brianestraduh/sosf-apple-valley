@@ -26,20 +26,20 @@
   ],
   "stats": [
     {
-      "value": "500+",
+      "value": "Growing",
       "label": "Youth Served"
     },
     {
-      "value": "50+",
-      "label": "Partner Gyms"
+      "value": "Expanding",
+      "label": "Partner Network"
     },
     {
-      "value": "100+",
-      "label": "Mentors"
+      "value": "Active",
+      "label": "Mentorship Programs"
     },
     {
-      "value": "85%",
-      "label": "Success Rate"
+      "value": "Making Impact",
+      "label": "Every Day"
     }
   ]
 }

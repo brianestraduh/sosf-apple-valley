@@ -4,6 +4,8 @@ import { Footer } from './components/Footer'
 import { Section } from './components/Section'
 import { Home } from './pages/Home'
 import { NotFound } from './pages/NotFound'
+import { ThankYou } from './pages/ThankYou'
+import { DonationCancelled } from './pages/DonationCancelled'
 import { useTheme } from './hooks/useTheme'
 
 // MDX Page Wrapper
@@ -293,6 +295,10 @@ function App() {
             </div>
           </MDXPageWrapper>
         )
+      case '/thank-you':
+        return <ThankYou />
+      case '/donation-cancelled':
+        return <DonationCancelled />
       default:
         return <NotFound />
     }

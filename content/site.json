@@ -4,7 +4,7 @@
   "tagline": "Answer the Call — A coach in every kid's corner.",
   "contact": {
     "email": "info@sosf.org",
-    "phone": "(555) 555-5555",
+    "phone": "(909) 413-2993",
     "address": "Victorville, CA"
   },
   "nav": [
@@ -15,9 +15,7 @@
     { "label": "Donate", "href": "/donate" }
   ],
   "social": {
-    "instagram": "https://instagram.com/sosf",
-    "facebook": "https://facebook.com/sosf",
-    "twitter": "https://x.com/sosf"
+    "instagram": "https://www.instagram.com/sos_fdn?igsh=NTc4MTIwNjQ2YQ=="
   }
 }
 
