@@ -162,6 +162,18 @@ function App() {
               SOSF is a 501(c)(3) non-profit organization. All donations are tax-deductible to the
               fullest extent allowed by law.
             </p>
+            <div className="bg-brand-sand/10 rounded-xl p-6 my-6">
+              <h3 className="font-display text-xl mb-3">📄 Official Donation Acknowledgment</h3>
+              <p className="text-neutral-700">
+                After completing your donation, you will be able to generate an <strong>IRS-compliant 
+                donation acknowledgment letter</strong> for your tax records. This official receipt will 
+                include our EIN (33-4019131), 501(c)(3) status, and all required IRS documentation 
+                for claiming your tax deduction.
+              </p>
+              <p className="text-neutral-700 mt-3">
+                PayPal will also send you a payment confirmation email with transaction details.
+              </p>
+            </div>
           </MDXPageWrapper>
         )
       case '/volunteers':

@@ -1,5 +1,6 @@
 import { Section } from '../components/Section'
 import { Button } from '../components/Button'
+import { ReceiptGenerator } from '../components/ReceiptGenerator'
 
 export function ThankYou() {
   return (
@@ -37,7 +38,7 @@ export function ThankYou() {
           <ul className="space-y-3 text-lg">
             <li className="flex items-start">
               <span className="text-brand-red font-bold mr-3">•</span>
-              <span>You will receive a confirmation email with your donation receipt</span>
+              <span>PayPal will send you a payment confirmation email with transaction details</span>
             </li>
             <li className="flex items-start">
               <span className="text-brand-red font-bold mr-3">•</span>
@@ -47,8 +48,14 @@ export function ThankYou() {
               <span className="text-brand-red font-bold mr-3">•</span>
               <span>We'll keep you updated on the impact you're making</span>
             </li>
+            <li className="flex items-start">
+              <span className="text-brand-red font-bold mr-3">•</span>
+              <span>For IRS-compliant tax receipts, use the form below to generate your official donation acknowledgment</span>
+            </li>
           </ul>
         </div>
+
+        <ReceiptGenerator />
 
         <p className="text-xl text-neutral-700 mb-8">
           Together, we're empowering the next generation through combat sports. 
