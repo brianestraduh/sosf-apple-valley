@@ -17,6 +17,25 @@ export function Home() {
         imageAlt={homeData.hero.imageAlt}
       />
 
+      {/* Video Section */}
+      <Section>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="h2 mb-4">See Our Impact</h2>
+            <p className="lead">Watch how SOSF is transforming lives through combat sports</p>
+          </div>
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl"
+              src="https://www.youtube.com/embed/S2zwERJUgQk"
+              title="SOSF Impact Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </Section>
+
       {/* Stats Section */}
       <Section className="bg-black/20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
