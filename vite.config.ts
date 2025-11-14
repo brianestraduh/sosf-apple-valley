@@ -7,7 +7,7 @@ export default defineConfig({
     { enforce: 'pre', ...mdx() },
     react()
   ],
-  base: '/sosf-apple-valley/', // GitHub Pages subdirectory path
+  base: '/', // Custom domain - serve from root
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
