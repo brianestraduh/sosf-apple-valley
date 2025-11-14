@@ -6,6 +6,7 @@ import { Home } from './pages/Home'
 import { NotFound } from './pages/NotFound'
 import { ThankYou } from './pages/ThankYou'
 import { DonationCancelled } from './pages/DonationCancelled'
+import { PayPalButton } from './components/PayPalButton'
 import { useTheme } from './hooks/useTheme'
 
 // MDX Page Wrapper
@@ -136,6 +137,9 @@ function App() {
               Your donation directly impacts the lives of at-risk youth by providing them with
               training, mentorship, and opportunity.
             </p>
+            
+            <PayPalButton />
+            
             <h2>Where Your Donation Goes</h2>
             <div className="card my-6">
               <ul className="space-y-4">
